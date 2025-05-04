@@ -8,8 +8,6 @@
 #### How to run SonarQube locally
 ```bash
 
-
-
 # run the SonarQube service, this script will run it port 9000
 $ ./run_sonarqube.sh
 
@@ -28,7 +26,7 @@ dd0401397c13   sonarqube:lts   "/opt/sonarqube/dock…"   2 hours ago   Up 2 hou
 * Generate a token with Type: "User Token" and copy it to you clipboard
 
 
-#### Scan a local code directory
+#### Create the .env and .properties files.
 ```bash
 
 # create a .properties file, any file name is fine. 
@@ -37,6 +35,15 @@ $ cp sonar-project.properties.example sonar-project.properties
 
 # create a .env file and set the variables. Here you will place your token and put absolute paths to your properties file and code directory.
 $ cp sonarqube.env.example sonarqube.env
+
+```
+
+
+#### Start the scan
+
+```bash
+# launch the container if it's not running
+$ ./run_sonarqube.sh
 
 # run the SonarQube cli to initiate the scan. The URL for the results will be printed to the terminal
 $ ./run_sonarqube_cli.sh
