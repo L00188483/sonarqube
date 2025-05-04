@@ -1,0 +1,9 @@
+sonar.projectKey=my-org_my-project
+sonar.projectName=My Project
+sonar.organization=my-org
+sonar.sourceEncoding=UTF-8
+sonar.exclusions=**/venv/**,**/__pycache__/**
+
+# the sonar.sources path is within the container, don't change it unless
+# you are also changing "-v" in run_sonarqube_cli.sh
+sonar.sources=/usr/src/app
