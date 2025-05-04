@@ -33,7 +33,7 @@ dd0401397c13   sonarqube:lts   "/opt/sonarqube/dock…"   2 hours ago   Up 2 hou
 
 # create a .properties file, any file name is fine. 
 # You don't need to change the contents, but you might want to change projectKey and projectName
-$ cp sonar-project.properties.example studio-ghubli-project.properties
+$ cp sonar-project.properties.example sonar-project.properties
 
 # create a .env file and set the variables. Here you will place your token and put absolute paths to your properties file and code directory.
 $ cp sonarqube.env.example sonarqube.env
