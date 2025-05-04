@@ -35,7 +35,6 @@ $ cp sonar-project.properties.example sonar-project.properties
 
 # create a .env file and set the variables. Here you will place your token and put absolute paths to your properties file and code directory.
 $ cp sonarqube.env.example sonarqube.env
-
 ```
 
 
